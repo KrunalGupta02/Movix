@@ -1,0 +1,16 @@
+@import "../../mixins.scss";
+
+.circleRating {
+  border-radius: 50%;
+  padding: 1.5px;
+  background-color: var(--black);
+
+  .CircularProgressbar-text {
+    font-size: 40px;
+    font-weight: 700;
+    fill: black;
+  }
+  .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+}
