@@ -1,13 +1,9 @@
 import React from "react";
 import "./style.scss";
 
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,16 +19,24 @@ const Footer = () => {
         <div className="infoText">🤞 Made by Krunal 🤞</div>
         <div className="socialIcons">
           <span className="icon">
-            <FaFacebookF />
+            <Link to="https://github.com/KrunalGupta02">
+              <FaGithub />
+            </Link>
+          </span>
+          {/* <span className="icon">
+            <Link to="">
+              <FaInstagram />
+            </Link>
+          </span> */}
+          <span className="icon">
+            <Link to="https://www.linkedin.com/in/krunal-gupta-9bb6a7206/">
+              <FaLinkedin />
+            </Link>
           </span>
           <span className="icon">
-            <FaInstagram />
-          </span>
-          <span className="icon">
-            <FaLinkedin />
-          </span>
-          <span className="icon">
-            <FaTwitter />
+            <Link to="https://twitter.com/KrunalKRG">
+              <FaTwitter />
+            </Link>
           </span>
         </div>
       </ContentWrapper>
